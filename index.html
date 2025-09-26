@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gauteng Mining Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #e0f2ff;
+      color: #333;
+    }
+    header {
+      position: relative;
+      background: linear-gradient(90deg, #1e3c72, #2a5298);
+      color: #f9fafb;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center;
+      background-size: cover;
+      opacity: 0.3;
+      z-index: 0;
+      border-radius: 0;
+    }
+    header span {
+      position: relative;
+      z-index: 1;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      background: linear-gradient(90deg, #2a5298, #1e3c72);
+      padding: 0.7rem;
+    }
+    nav a {
+      color: #f9fafb;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.3rem 0.6rem;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    main {
+      max-width: 95%;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border: 1px solid #cbd5e0;
+      padding: 0.7rem;
+      text-align: left;
+    }
+    th {
+      background: linear-gradient(90deg, #1e3c72, #2a5298);
+      color: #ffffff !important;
+    }
+    th, td a {
+      color: #1d4ed8;
+      text-decoration: none;
+    }
+    th, td a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 1.2rem;
+      background: linear-gradient(90deg, #1e3c72, #2a5298);
+      color: #f9fafb;
+      margin-top: 2rem;
+      border-top: 2px solid #2a5298;
+    }
+    h2 {
+      color: #1e3c72;
+      border-bottom: 2px solid #cbd5e0;
+      padding-bottom: 0.3rem;
+    }
+    p {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span>Gauteng Mining Hub</span>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Mines</a>
+  </nav>
+
+  <main>
+    <section id="home">
+      <h2>Home</h2>
+      <p>Welcome to Gauteng Mining Hub! Discover detailed information about operating mines in Gauteng, South Africa. Explore gold, uranium, and diamond operations along with their owners and official websites.</p>
+    </section>
+
+    <section id="services">
+      <h2>Complete List of Mines in Gauteng (DMRE Directory)</h2>
+      <p>This table lists every registered mine, quarry, or processing operation in Gauteng according to the official DMRE directory as of 2025.</p>
+      <table>
+        <thead>
+          <tr><th style="color:white;">Mine Name</th><th style="color:white;">Commodity</th><th style="color:white;">Owner / Operator</th><th style="color:white;">Location</th><th style="color:white;">Website</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>South Deep</td><td>Gold</td><td>Gold Fields Ltd</td><td>Westonaria</td><td><a href="https://www.goldfields.com/operations-south-deep.php" target="_blank">Visit</a></td></tr>
+          <tr><td>Mponeng</td><td>Gold</td><td>Harmony Gold</td><td>Carletonville</td><td><a href="https://www.harmony.co.za/our-business/south-africa/mponeng/" target="_blank">Visit</a></td></tr>
+          <tr><td>Kloof Operations</td><td>Gold</td><td>Sibanye‑Stillwater</td><td>West Rand</td><td><a href="https://www.sibanyestillwater.com/business/gold/kloof/" target="_blank">Visit</a></td></tr>
+          <tr><td>Driefontein Operations</td><td>Gold / Uranium</td><td>Sibanye‑Stillwater</td><td>Carletonville</td><td><a href="https://www.sibanyestillwater.com/business/gold/driefontein/" target="_blank">Visit</a></td></tr>
+          <tr><td>Moab Khotsong</td><td>Gold / Uranium</td><td>Harmony Gold</td><td>Orkney (border region)</td><td><a href="https://www.harmony.co.za/our-business/south-africa/moab-khotsong/" target="_blank">Visit</a></td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
